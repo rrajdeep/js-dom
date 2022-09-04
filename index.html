@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML DOM Assignment</title>
+</head>
+
+<body>
+    <h2>HTML DOM</h2>
+    <!-- button -->
+    <button type="button" id="myBtn">Try Me</button>
+    <!-- paragraph without content -->
+    <p id="para"></p>
+    <script>
+        var btn = document.getElementById('myBtn');
+        var para = document.getElementById('para');
+
+        // Adding eventlistener to button:
+        btn.addEventListener("mouseover", function1);
+        btn.addEventListener("click", function2);
+        btn.addEventListener("mouseout", function3);
+
+        // function for button mouse over:
+        function function1() {
+            para.innerHTML = "Moused over!";
+        }
+
+        // function for button click:
+        function function2() {
+            para.innerHTML = "Clicked!"
+        }
+
+        // function for button mouse out:
+        function function3() {
+            para.innerHTML = "Moused out!"
+        }
+    </script>
+</body>
+
+</html>
